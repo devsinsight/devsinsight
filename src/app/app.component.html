@@ -1,107 +1,10 @@
 <div id="wrap" class="boxed ">
     <div class="grey-bg">
 
-        <div class="grey-dark-bg">
+        <app-navbar></app-navbar>
 
-            <!-- HEADER 1 BLACK NO-TRANSPARENT -->
-            <app-navbar></app-navbar>
+        <router-outlet></router-outlet>
 
-            <!-- FLEX SLIDER -->
-            <div class="indent-header">
-                <div class="slider-1 clearfix">
-
-                    <div class="flex-container">
-                        <div class="flexslider loading">
-                            <ul class="slides">
-
-                                <!-- SLIDE 1 -->
-                                <li style="background:url(assets/images/flexslider/slider-bg-1.jpg) no-repeat;background-position:50% 0">
-
-                                    <div class="container">
-                                        <div class="sixteen columns contain">
-                                            <h2 data-toptitle="38%" class="norm-50-wide norm-40-768-959 font-light top-28-767 flex-top-bot">CREATIVE STUDIO<br><span class="bold">HASWELL</span></h2>
-                                            <p data-bottomtext="30%" class="bot-15-767 flex-bot-top"><a class="button medium thin hover-dark tp-button white" href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel">SEE MORE</a><a class="button medium thin hover-dark tp-button white ml-20" href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel">PURCHASE</a></p>
-                                            <img src="assets/images/flexslider/slider-item-1.png" class="item" alt="slide-item" data-topimage="19%" />
-                                        </div>
-                                    </div>
-                                    <!-- End Container -->
-
-                                </li>
-                                <!-- End item -->
-
-                                <!-- SLIDE 2 -->
-                                <li style="background:url(assets/images/flexslider/slider-bg-2.jpg) no-repeat; background-position:50% 0">
-
-                                    <div class="container">
-                                        <div class="sixteen columns contain">
-                                            <h2 data-toptitle="44%" class="norm-50-wide text-center font-white flex-top-bot"><span class="slider-caption-border">DESIGN STUDIO</span></h2>
-                                        </div>
-                                    </div>
-                                    <!-- End Container -->
-
-                                </li>
-                                <!-- End item -->
-
-                                <!-- SLIDE 3 -->
-                                <li style="background:url(assets/images/flexslider/slider-bg-3.jpg) no-repeat; background-position:50% 0">
-
-                                    <div class="container">
-                                        <div class="sixteen columns contain">
-                                            <h2 data-toptitle="40%" class="norm-50-wide norm-40-768-959 top-34-767 font-light font-black flex-top-bot">CREATIVE STUDIO<br></h2>
-                                            <p data-bottomtext="40%" class="norm-50-wide norm-40-768-959 bot-34-767 font-black flex-bot-top"><span class="bold">HASWELL</span></p>
-                                            <img src="assets/images/flexslider/jump-men.png" class="item" alt="slide-item" data-topimage="0%" />
-                                        </div>
-                                    </div>
-                                    <!-- End Container -->
-
-                                </li>
-                                <!-- End item -->
-
-
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- End slider -->
-            </div>
-
-        </div>
-        <!-- END grey-dark-bg -->
-
-        <!-- COTENT CONTAINER -->
-        <div class="container p-140-cont">
-            <app-home></app-home>
-
-        </div>
-
-        <!-- NEWS LETTER -->
-        <div class="page-section nl-cont">
-            <div class="container">
-                <div class="relative">
-                    <div id="mc_embed_signup" class="nl-form-container clearfix">
-                        <form action="http://abcgomel.us9.list-manage.com/subscribe/post-json?u=ba37086d08bdc9f56f3592af0&amp;id=e38247f7cc&amp;c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletterform validate" target="_blank"
-                            novalidate>
-                            <!-- EDIT THIS ACTION URL (add "post-json?u" instead of "post?u" and appended "&amp;c=?" to the end of this URL) -->
-                            <input type="email" value="" name="EMAIL" class="email nl-email-input" id="mce-EMAIL" placeholder="Enter your email" required>
-                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                            <div style="position: absolute; left: -5000px;"><input type="text" name="b_ba37086d08bdc9f56f3592af0_e38247f7cc" tabindex="-1" value=""></div>
-
-                            <input type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe" class="button medium gray">
-                        </form>
-                        <div id="notification_container"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- FOOTER 2 -->
-        <app-footer></app-footer>
-
-        <!-- BACK TO TOP -->
-        <p id="back-top">
-            <a href="#top" title="Back to Top"><span class="icon icon-arrows-up"></span></a>
-        </p>
 
     </div>
     <!-- End BG -->

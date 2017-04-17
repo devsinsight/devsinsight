@@ -19,7 +19,7 @@
         "prefix": "app",
         "styles": [
             "styles.css",
-            "../haswell/css/flexslider.css",
+            "../haswell/rs-plugin/css/settings.css",
             "../node_modules/bootstrap/dist/css/bootstrap.css",
             "../haswell/css/icons-fonts.css",
             "../haswell/css/style.css",
@@ -30,13 +30,16 @@
             "../node_modules/tether/dist/js/tether.js",
             "../node_modules/bootstrap/dist/js/bootstrap.js",
             "../haswell/js/jquery.magnific-popup.min.js",
+            "../haswell/js/isotope.pkgd.min.js",
             "../haswell/js/imagesloaded.pkgd.min.js",
+            "../haswell/js/masonry.pkgd.min.js",
             "../haswell/js/jquery.countTo.js",
             "../haswell/js/jquery.appear.js",
             "../haswell/js/owl.carousel.min.js",
             "../haswell/js/main.js",
-            "../haswell/js/jquery.flexslider-min.js",
-            "../haswell/js/flex-slider.js"
+            "../haswell/rs-plugin/js/jquery.themepunch.tools.min.js",
+            "../haswell/rs-plugin/js/jquery.themepunch.revolution.min.js",
+            "../haswell/js/custom.js"
         ],
         "environmentSource": "environments/environment.ts",
         "environments": {
