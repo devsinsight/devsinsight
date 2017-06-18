@@ -36,7 +36,6 @@
             "../haswell/js/jquery.countTo.js",
             "../haswell/js/jquery.appear.js",
             "../haswell/js/owl.carousel.min.js",
-            "../haswell/js/main.js",
             "../haswell/rs-plugin/js/jquery.themepunch.tools.min.js",
             "../haswell/rs-plugin/js/jquery.themepunch.revolution.min.js"
         ],

@@ -10,16 +10,14 @@ import 'rxjs/add/operator/map';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'app works!';
-  constructor(private router: Router, private activatedRoute: ActivatedRoute) {
+  constructor(private router: Router, private activatedRoute: ActivatedRoute) {}
 
-  }
   ngOnInit() {
     this.router.events
       .filter(event => event instanceof NavigationEnd)
       .map(() => this.activatedRoute)
       .subscribe((event) => {
-        $.getScript('assets/scripts/custom.js');
+        $.getScript('assets/scripts/main.js');
       });
   }
 }
