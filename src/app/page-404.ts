@@ -1,11 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from "@angular/router";
 
 @Component({
     selector: 'app-page-not-found',
-    template: '<h1>Page Not Found</h1>'
+    templateUrl: './page-404.html'
 })
 export class AppPageNotFoundComponent implements OnInit {
-    constructor() { }
+    constructor(router: Router) { 
+        
+    }
 
     ngOnInit() { }
 }

@@ -38,8 +38,7 @@
             "../haswell/js/owl.carousel.min.js",
             "../haswell/js/main.js",
             "../haswell/rs-plugin/js/jquery.themepunch.tools.min.js",
-            "../haswell/rs-plugin/js/jquery.themepunch.revolution.min.js",
-            "../haswell/js/custom.js"
+            "../haswell/rs-plugin/js/jquery.themepunch.revolution.min.js"
         ],
         "environmentSource": "environments/environment.ts",
         "environments": {
