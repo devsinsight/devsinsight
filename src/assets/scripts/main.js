@@ -268,6 +268,7 @@ $(document).ready(function () {
     --------------------------------------------- */
     initMenu();
     initMagnPopup();
+    initMap();
     initCounters();
     initPageSliders();
     initImgHeight();
@@ -311,6 +312,48 @@ $(document).ready(function () {
     });
 
 });
+
+/* ---------------------------------------------
+     GOOGLE MAP
+     --------------------------------------------- */
+    var gmMapDiv = $("#google-map");
+
+    function initMap() {
+        (function ($) {
+
+            if (gmMapDiv.length) {
+
+                var gmCenterAddress = gmMapDiv.attr("data-address");
+                var gmMarkerAddress = gmMapDiv.attr("data-address");
+
+                gmMapDiv.gmap3({
+                    action: "init",
+                    marker: {
+                        address: gmMarkerAddress,
+                        options: {
+                            icon: "images/loc-marker.png"
+                        }
+                    },
+                    map: {
+                        options: {
+                            zoom: 18,
+                            zoomControl: true,
+                            zoomControlOptions: {
+                                style: google.maps.ZoomControlStyle.SMALL
+                            },
+                            mapTypeControl: false,
+                            scaleControl: false,
+                            scrollwheel: false,
+                            streetViewControl: false,
+                            draggable: true,
+                            styles: [{ stylers: [{ invert_lightness: true }, { saturation: -100 }, { lightness: 10 }] }]
+                        }
+                    }
+                });
+            }
+        })(jQuery);
+    }
+
 
 /* --------------------------------------------
   HEADER MENU

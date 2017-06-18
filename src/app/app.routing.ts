@@ -9,6 +9,7 @@ const router: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'blog', loadChildren: 'app/blog/blog.module#BlogModule' },
   { path: 'contact', loadChildren: 'app/contact/contact.module#ContactModule' },
+  { path: 'about-us', loadChildren: 'app/about-us/about-us.module#AboutUsModule' },
   { path: '404', component: AppPageNotFoundComponent },
   { path: '**', redirectTo: '404' }
 ];

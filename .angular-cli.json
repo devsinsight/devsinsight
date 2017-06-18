@@ -38,7 +38,9 @@
         "../haswell/js/jquery.appear.js",
         "../haswell/js/owl.carousel.min.js",
         "../haswell/rs-plugin/js/jquery.themepunch.tools.min.js",
-        "../haswell/rs-plugin/js/jquery.themepunch.revolution.min.js"
+        "../haswell/rs-plugin/js/jquery.themepunch.revolution.min.js",
+        "../haswell/js/google.maps.js",
+        "../haswell/js/gmap3.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

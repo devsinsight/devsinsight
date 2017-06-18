@@ -25,9 +25,21 @@
                         <nav class="collapse collapsing navbar-collapse right-1024">
                             <ul class="nav navbar-nav">
                                 <li class="parent" [routerLinkActiveOptions]="{exact:true}" [routerLinkActive]="['current']">
-                                    <a href="javascript:void(0)"   [routerLink]="'/'">
+                                    <a href="javascript:void(0)" [routerLink]="'/'">
                                         <div class="main-menu-title">HOME</div>
                                     </a>
+                                </li>
+                                <li class="parent" [routerLinkActiveOptions]="{exact:true}" [routerLinkActive]="['current']">
+                                    <a href="javascript:void(0)">
+                                        <div class="main-menu-title">ABOUT US</div>
+                                    </a>
+                                    <ul class="sub">
+                                        <li><a href="javascript:void(0)" [routerLink]="'/about-us/our-company'" [routerLinkActiveOptions]="{exact:true}" [routerLinkActive]="['current']">OUR COMPANY</a></li>
+                                        <li><a href="javascript:void(0)" [routerLink]="'/about-us/our-vision'" [routerLinkActiveOptions]="{exact:true}" [routerLinkActive]="['current']">OUR VISION</a></li>
+                                        <li><a href="javascript:void(0)" [routerLink]="'/about-us/our-people'" [routerLinkActiveOptions]="{exact:true}" [routerLinkActive]="['current']">OUR PEOPLE</a></li>
+                                        <li><a href="javascript:void(0)" [routerLink]="'/about-us/our-business-principles'" [routerLinkActiveOptions]="{exact:true}" [routerLinkActive]="['current']">OUR BUSINESS PRINCIPLES</a></li>
+                                        <li><a href="javascript:void(0)" [routerLink]="'/about-us/our-history'" [routerLinkActiveOptions]="{exact:true}" [routerLinkActive]="['current']">OUR HISTORY</a></li>
+                                    </ul>
                                 </li>
                                 <li class="parent" [routerLinkActive]="['current']">
                                     <a href="javascript:void(0)" [routerLink]="'/blog'">
@@ -35,54 +47,9 @@
                                     </a>
                                 </li>
                                 <li id="menu-contact-info-big" class="parent megamenu" [routerLinkActive]="['current']">
-                                    <a href="javascript:void(0)">
-                                        <div class="main-menu-title">CONTACT</div>
+                                    <a href="javascript:void(0)" [routerLink]="'/contact'">
+                                        <div class="main-menu-title">CONTACT US</div>
                                     </a>
-                                    <ul class="sub">
-                                        <li class="clearfix">
-                                            <div class="menu-sub-container">
-
-                                                <div class="col-md-6 menu-map-container hide-max-960 ">
-                                                    <div class="google-map-container">
-                                                        <img src="assets/images/map-line.png" alt="alt">
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-3 menu-contact-info">
-                                                    <ul class="contact-list">
-                                                        <li class="contact-loc clearfix">
-                                                            <div class="loc-icon-container">
-                                                                <span aria-hidden="true" class="icon_pin_alt main-menu-contact-icon"></span>
-                                                            </div>
-                                                            <div class="menu-contact-text-container">555 California str, Suite 100</div>
-                                                        </li>
-                                                        <li class="contact-phone clearfix">
-                                                            <div class="loc-icon-container">
-                                                                <span aria-hidden="true" class="icon_phone main-menu-contact-icon"></span>
-                                                            </div>
-                                                            <div class="menu-contact-text-container">1-32-312-22, 1-32-112-22</div>
-                                                        </li>
-                                                        <li class="contact-mail clearfix">
-                                                            <div class="loc-icon-container">
-                                                                <span aria-hidden="true" class="icon_mail_alt main-menu-contact-icon"></span>
-                                                            </div>
-                                                            <div class="menu-contact-text-container">
-                                                                <a class="a-mail" href="#">email@felius.com</a>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-
-                                                <div class="box col-md-3 menu-demo-info closed">
-                                                    <h5 class="title">CONTACTS</h5>
-                                                    <ul>
-                                                        <li><a href="javascript:void(0)" [routerLink]="'/contact'">CONTACT US</a></li>
-                                                    </ul>
-                                                </div>
-
-                                            </div>
-                                        </li>
-                                    </ul>
                                 </li>
 
                             </ul>
