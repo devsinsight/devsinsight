@@ -1,9 +1,20 @@
-<owl-carousel #slider
-    [options]="{items: 1, dots: true, navigation: true}"
-    [items]="images">
-    <div *ngFor="let image of images">
-        <div class="slider-custom-slide">
-        <div class="slider-custom-image" [style.backgroundImage]="'url('+ image + ')'"> </div>
+<div class="owl-carousel owl-theme owl-loaded">
+    <owl-carousel #slider
+        [options]="{items: 1, dots: true, navigation: true}"
+        [carouselClasses]="['owl-stage-outer']"
+        [items]="images">
+        <div *ngFor="let image of images; let currIndex = index">
+            <div class="slider-custom-slide">
+                <div [style.backgroundImage]="'url('+image+')'" class="slider-custom-image">
+                </div>
+            </div>
+        </div>
+    </owl-carousel>
+
+    <div class="owl-controls">
+        <div class="owl-custom-nav">
+            <div class="owl-custom-prev" (click)="prev()"></div>
+            <div class="owl-custom-next" (click)="next()"></div>
+        </div>
     </div>
-    </div>
-</owl-carousel>
+</div>

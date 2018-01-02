@@ -9,6 +9,7 @@ import {OwlCarousel} from 'ngx-owl-carousel';
 export class SliderComponent implements OnInit {
 
   images = [];
+  currIndex = 0;
   @ViewChild('slider') slider: OwlCarousel;
 
   constructor() {}

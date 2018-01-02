@@ -19,9 +19,10 @@ export class AppComponent implements OnInit {
       .filter(event => event instanceof NavigationEnd)
       .map(() => this.activatedRoute)
       .subscribe((event) => {
-        $(document).off();
-        
-        $.getScript('assets/scripts/main.js');
+        //$(document).off();
+        //$.getScript('assets/scripts/main.js');
       });
+
+      $.getScript('assets/scripts/main.js');
   }
 }

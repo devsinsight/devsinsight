@@ -20,15 +20,67 @@
     visibility: inherit;
 }
 
+.owl-custom-prev:after {
+    content: "\E824";
+}
+
+.owl-custom-next:after {
+    content: "\E825";
+}
+
+.owl-custom-prev {
+    position: absolute;
+    line-height: 110px;
+    text-align: center;
+    font-family: revicons;
+    color: #fff;
+    font-size: 20px;
+    top: 320px;
+    left: 0;
+    z-index: 999;
+    width: 30px;
+    height: 110px;
+    background: rgba(0,0,0,.25);
+    transition: all .2s ease-in-out;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.owl-custom-next {
+    position: absolute;
+    line-height: 110px;
+    text-align: center;
+    font-family: revicons;
+    color: #fff;
+    font-size: 20px;
+    top: 320px;
+    right: 0px;
+    z-index: 999;
+    width: 30px;
+    height: 110px;
+    background: rgba(0,0,0,.25);
+    transition: all .2s ease-in-out;
+    opacity: 1;
+    cursor: pointer;
+}
+
 @media (max-width: 414px) {
     .slider-custom-slide {
         height: 200px;
+    }
+
+    .owl-custom-next, .owl-custom-prev {
+        visibility: hidden;
     }
 }
 
 @media (min-width: 768px) {
     .slider-custom-slide {
         height: 400px;
+    }
+        
+    .owl-custom-next, .owl-custom-prev {
+        visibility: hidden;
     }
 }
 
@@ -37,4 +89,9 @@
     .slider-custom-slide {
         height: 700px;
     }
+
+    .owl-custom-next, .owl-custom-prev {
+        visibility: inherit;
+    }
+
 }
