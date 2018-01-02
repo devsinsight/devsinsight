@@ -268,32 +268,33 @@ $(document).ready(function () {
       FUNCTIONS
     --------------------------------------------- */
     //initMenu();
-    initMagnPopup();
-    initMap();
+    //initMagnPopup();
+    //initMap();
     //initCounters();
-    initPageSliders();
-    initImgHeight();
-    initLeftMenu();
+    //initPageSliders();
+    //initImgHeight();
+    //initLeftMenu();
     if ($('#flickr-feeds').length) {
         initFlickrFeeds();
     };
     if ($('#twitter-feeds').length) {
-        initTwitterFeeds();
+        //initTwitterFeeds();
     };
     if ($('#nav').length) {
-        initAffixCheck();
+        //initAffixCheck();
     };
     if ($('#items-grid').length) {
-        initWorkFilter();
+        //initWorkFilter();
     };
     if ($('.masonry').length) {
-        initMasonry();
+        //initMasonry();
     };
     if ($('.wow').length) {
-        initWow();
+        //initWow();
     };
 
     //WINDOW RESIZE
+    /*
     windowT.resize(function () {
         $('.equal-height').css('height', 'auto').equalHeights();
         if ($('#nav').length) {
@@ -302,6 +303,7 @@ $(document).ready(function () {
         initImgHeight();
         initLeftMenu();
     });
+    */
 
     //WINDOW WIDTH CHANGE
     var widthWin = windowT.width();
@@ -432,10 +434,12 @@ if ((old_ie > -1) || (new_ie > -1)) {
 /* --------------------------------------------
   PAGE LOADER
 --------------------------------------------- */
+/*
 $("body").imagesLoaded(function () {
     $("#loader3").fadeOut();
     $("#loader-overflow").delay(200).fadeOut(700);
 });
+*/
 
 /* --------------------------------------------
   MAGNIFIC POPUP SETTINGS
