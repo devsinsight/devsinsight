@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+  import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -22,6 +22,8 @@ import { MapComponent } from 'app/home/map/map.component';
 import { PortfolioComponent } from 'app/home/portfolio/portfolio.component';
 import { ServiceComponent } from 'app/home/service/service.component';
 import { WorkProcessComponent } from 'app/home/work-process/work-process.component';
+
+import { OwlModule } from 'ngx-owl-carousel';
 
 import { AppPageNotFoundComponent } from 'app/page-404';
 import { AppRouting } from 'app/app.routing';
@@ -54,6 +56,7 @@ import 'app/rxjs-extensions';
     BrowserModule,
     FormsModule,
     HttpModule,
+    OwlModule,
     AppRouting
   ],
   providers: [CommonService],

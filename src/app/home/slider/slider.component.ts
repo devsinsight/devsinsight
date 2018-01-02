@@ -1,16 +1,34 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import {OwlCarousel} from 'ngx-owl-carousel';
 
 @Component({
   selector: 'app-slider',
   templateUrl: './slider.component.html',
-  styleUrls: ['./slider.component.css']
+  styleUrls: ['./slider.component.scss']
 })
 export class SliderComponent implements OnInit {
-  show = false;
-  constructor() { }
 
-  ngOnInit() {
-     setTimeout(function(){ this.show = true; }.bind(this), 1000 );
+  images = [];
+  @ViewChild('slider') slider: OwlCarousel;
+
+  constructor() {}
+
+   ngOnInit(): void {
+    this.images = [
+      'assets/images/revo-slider/terka.jpg',
+      'assets/images/revo-slider/face-side.jpg',
+      'assets/images/revo-slider/city-grey.jpg'
+    ];
+
   }
+
+  next() {
+    this.slider.next([200]);
+  }
+
+  prev(){
+    this.slider.previous([200]);
+  }
+
 
 }
