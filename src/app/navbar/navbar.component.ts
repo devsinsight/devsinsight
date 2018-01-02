@@ -1,7 +1,7 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
 import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
-import $ from 'jquery';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-navbar',

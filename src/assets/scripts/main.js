@@ -126,6 +126,7 @@ $(document).ready(function () {
 	/* --------------------------------------------
     SKILL BAR ANIMATION
   --------------------------------------------- */
+  /*
     $('.skillbar').appear(function () {
         $('.skillbar').each(function () {
             $(this).find('.skillbar-bar').animate({
@@ -133,7 +134,7 @@ $(document).ready(function () {
             }, 2000);
         });
     });
-
+*/
     /* --------------------------------------------
       BOOTSTRAP JS
     --------------------------------------------- */
@@ -269,7 +270,7 @@ $(document).ready(function () {
     //initMenu();
     initMagnPopup();
     initMap();
-    initCounters();
+    //initCounters();
     initPageSliders();
     initImgHeight();
     initLeftMenu();

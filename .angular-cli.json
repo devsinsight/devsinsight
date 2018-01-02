@@ -37,7 +37,6 @@
         "../haswell/js/imagesloaded.pkgd.min.js",
         "../haswell/js/masonry.pkgd.min.js",
         "../haswell/js/jquery.countTo.js",
-        "../haswell/js/jquery.appear.js",
         "../node_modules/owl.carousel/dist/owl.carousel.js",
         "../haswell/rs-plugin/js/jquery.themepunch.tools.min.js",
         "../haswell/rs-plugin/js/jquery.themepunch.revolution.min.js",
@@ -58,13 +57,16 @@
   },
   "lint": [
     {
-      "project": "src/tsconfig.app.json"
+      "project": "src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
     },
     {
-      "project": "src/tsconfig.spec.json"
+      "project": "src/tsconfig.spec.json",
+      "exclude": "**/node_modules/**"
     },
     {
-      "project": "e2e/tsconfig.e2e.json"
+      "project": "e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
     }
   ],
   "test": {
