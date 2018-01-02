@@ -184,7 +184,7 @@ $(document).ready(function () {
 
         return false;
     });
-
+/*
     jQuery('#rs-fullwidth').revolution({
         dottedOverlay: "none",
         delay: 16000,
@@ -262,11 +262,11 @@ $(document).ready(function () {
         //fullScreenOffsetContainer: ""	
     });
 
-
+*/
     /* --------------------------------------------
       FUNCTIONS
     --------------------------------------------- */
-    initMenu();
+    //initMenu();
     initMagnPopup();
     initMap();
     initCounters();

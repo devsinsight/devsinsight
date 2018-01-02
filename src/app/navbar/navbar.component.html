@@ -20,18 +20,19 @@
 
         <div class="main-menu-container">
             <div class="container-m-30 clearfix">
-                <div id="main-menu">
+                <div id="main-menu" #mainMenu>
                     <div class="navbar navbar-default" role="navigation">
                         <nav class="collapse collapsing navbar-collapse right-1024">
                             <ul class="nav navbar-nav">
-                                <li class="parent" [routerLinkActiveOptions]="{exact:true}" [routerLinkActive]="['current']">
+                                <li [routerLinkActiveOptions]="{exact:true}" [routerLinkActive]="['current']">
                                     <a href="#" [routerLink]="'/'">
                                         <div class="main-menu-title">HOME</div>
                                     </a>
                                 </li>
                                 <li class="parent" [routerLinkActiveOptions]="{exact:true}" [routerLinkActive]="['current']">
-                                    <a href="#">
+                                    <a href="javascript:void(0)" (click)="aboutUs()">
                                         <div class="main-menu-title">ABOUT US</div>
+                                        <span class="open-sub" (click)="aboutUsOptions()"></span>
                                     </a>
                                     <ul class="sub">
                                         <li><a href="#" [routerLink]="'/about-us/our-company'" [routerLinkActiveOptions]="{exact:true}"
@@ -46,12 +47,12 @@
                                                 [routerLinkActive]="['current']">OUR HISTORY</a></li>
                                     </ul>
                                 </li>
-                                <li class="parent" [routerLinkActive]="['current']">
+                                <li [routerLinkActive]="['current']">
                                     <a href="#" [routerLink]="'/blog'">
                                         <div class="main-menu-title">BLOG</div>
                                     </a>
                                 </li>
-                                <li class="parent" [routerLinkActive]="['current']">
+                                <li [routerLinkActive]="['current']">
                                     <a href="#" [routerLink]="'/contact'">
                                         <div class="main-menu-title">CONTACT US</div>
                                     </a>
