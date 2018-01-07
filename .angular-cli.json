@@ -23,10 +23,9 @@
         "../node_modules/owl.carousel/dist/assets/owl.carousel.css",
         "../node_modules/owl.carousel/dist/assets/owl.theme.default.css",
         "../node_modules/bootstrap/dist/css/bootstrap.css",
-        "../haswell/rs-plugin/css/revicon.css",
+        "../haswell/css/revicon.css",
         "../haswell/css/icons-fonts.css",
-        "../haswell/css/style.css",
-        "../haswell/css/animate.min.css"
+        "../haswell/css/style.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.js",
