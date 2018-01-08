@@ -1,6 +1,6 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
+import { Component, ViewChild, ElementRef, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
-import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
+import { OnInit, OnDestroy } from '@angular/core/src/metadata/lifecycle_hooks';
 import * as $ from 'jquery';
 
 @Component({
@@ -8,17 +8,20 @@ import * as $ from 'jquery';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent {
 
   router: Router;
-  @ViewChild('mainMenu') mainMenu: ElementRef;
+  changeMenuHeight = false;
+  toggleSearch = false;
+
   constructor(router: Router) {
     this.router = router;
   }
 
-  ngOnInit(): void {
-    const body = $('body');
-    const primary = '#main-menu';
+  @HostListener('window:scroll', [])
+  scroll() {
+    this.changeMenuHeight = !(navigator.userAgent.match(/iPad|iPhone|Android/i))
+            && (((window.pageYOffset || document.documentElement.scrollTop) - (document.documentElement.clientTop || 0)) > 0);
   }
 
   aboutUsOptions(): void {
@@ -39,20 +42,4 @@ export class NavbarComponent implements OnInit {
     }
   }
 
-  aboutUs(): void {
-    const body = $('body');
-    const primary = '#main-menu';
-
-    if ((body.width() > 979) && (navigator.userAgent.match(/iPad|iPhone|Android/i))) {
-      const link = $(this);
-
-      if (link.parent().hasClass('open')) {
-        event.preventDefault();
-        link.parent().removeClass('open');
-      } else {
-        event.preventDefault();
-        link.parent().addClass('open');
-      }
-    }
-  }
 };

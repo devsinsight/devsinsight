@@ -9,7 +9,7 @@
       true,
       "check-space"
     ],
-    "curly": true,
+    "curly": [true, "next-line-single-line"],
     "eofline": true,
     "forin": true,
     "import-blacklist": [true, "rxjs"],

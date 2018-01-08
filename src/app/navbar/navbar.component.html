@@ -1,4 +1,4 @@
-<header id="nav" *ngIf="router.url != '/404'" class="header header-1 black-header mobile-no-transparent">
+<header class="header header-1 black-header mobile-no-transparent" [ngClass]="{affix: changeMenuHeight }">
     <div class="header-wrapper grey-dark-bg">
         <div class="container-m-30 clearfix">
             <div class="logo-row">
@@ -20,7 +20,7 @@
 
         <div class="main-menu-container">
             <div class="container-m-30 clearfix">
-                <div id="main-menu" #mainMenu>
+                <div id="main-menu">
                     <div class="navbar navbar-default" role="navigation">
                         <nav class="collapse collapsing navbar-collapse right-1024">
                             <ul class="nav navbar-nav">
@@ -30,7 +30,7 @@
                                     </a>
                                 </li>
                                 <li class="parent" [routerLinkActiveOptions]="{exact:true}" [routerLinkActive]="['current']">
-                                    <a href="javascript:void(0)" (click)="aboutUs()">
+                                    <a href="javascript:void(0)" >
                                         <div class="main-menu-title">ABOUT US</div>
                                         <span class="open-sub" (click)="aboutUsOptions()"></span>
                                     </a>
@@ -71,10 +71,10 @@
         </div>
 
         <ul class="cd-header-buttons">
-            <li><a class="cd-search-trigger" href="#cd-search"><span></span></a></li>
+            <li><a class="cd-search-trigger" [ngClass]="{'search-is-visible': toggleSearch }" href="jaascript:void(0)" (click)="toggleSearch = !toggleSearch"><span></span></a></li>
         </ul>
 
-        <div id="cd-search" class="cd-search">
+        <div id="cd-search" class="cd-search" [ngClass]="{'is-visible': toggleSearch }">
             <form class="form-search" id="searchForm" action="page-search-results.html" method="get">
                 <input type="text" value="" name="q" id="q" placeholder="Search...">
             </form>
